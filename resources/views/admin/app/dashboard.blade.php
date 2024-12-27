@@ -155,7 +155,7 @@
                                 </div>
                                 <div>
                                     <p class="text-white font-medium">Team A won against Team B</p>
-                                    <p class="text-sm text-gray-400 mt-1">Score: 3 - 1 • 2 hours ago</p>
+                                    <p class="text-sm text-gray-400 mt-1">Score: 3 - 1 �� 2 hours ago</p>
                                 </div>
                             </div>
                             <div class="flex items-center p-4 bg-gray-700/20 rounded-xl backdrop-blur transform hover:scale-102 transition-all duration-300">
@@ -288,3 +288,33 @@
         });
     </script>
 @endsection
+
+<style>
+    /* Webkit browsers (Chrome, Safari, newer versions of Opera) */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: rgba(31, 41, 55, 0.2);
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(59, 130, 246, 0.3);
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(59, 130, 246, 0.5);
+    }
+
+    /* Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(59, 130, 246, 0.3) rgba(31, 41, 55, 0.2);
+    }
+</style>

@@ -16,3 +16,10 @@ Route::get('/auth/login', function () {
 Route::get('/admin/app/dashboard', function () {
     return view('admin.app.dashboard');
 });
+Route::get('/pages/tournament', function () {
+    return view('admin.pages.tournament');
+});
+
+Route::get('/pages/players', function () {
+    return view('admin.pages.players');
+});
